@@ -23,80 +23,80 @@
     "application/json"
   ],
    "paths":{ 
-      "/AddBusinessDays":{ 
-         "post":{ 
-            "tags":[ 
-               "AddBusinessDays"
-            ],
-            "operationId":"Post",
-            "consumes":[ 
-               "application/json-patch+json",
-               "application/json",
-               "text/json",
-               "application/*+json"
-            ],
-            "produces":[ 
-               "text/plain",
-               "application/json",
-               "text/json"
-            ],
-            "parameters":[ 
-               { 
-                  "name":"data",
-                  "in":"body",
-                  "required":false,
-                  "schema":{ 
-                     "$ref":"#/definitions/DateTimeData"
-                  }
-               }
-            ],
-            "responses":{ 
-               "200":{ 
-                  "description":"Success",
-                  "schema":{ 
-                     "format":"date-time",
-                     "type":"string"
-                  }
-               }
+      "/AddBusinessDays":{
+        "post": {
+          "tags": [
+            "AddBusinessDays"
+          ],
+          "operationId": "AddBusinessDays",
+          "consumes": [
+            "application/json-patch+json",
+            "application/json",
+            "text/json",
+            "application/*+json"
+          ],
+          "produces": [
+            "text/plain",
+            "application/json",
+            "text/json"
+          ],
+          "parameters": [
+            {
+              "name": "data",
+              "in": "body",
+              "required": false,
+              "schema": {
+                "$ref": "#/definitions/DateTimeData"
+              }
             }
-         }
+          ],
+          "responses": {
+            "200": {
+              "description": "Success",
+              "schema": {
+                "format": "date-time",
+                "type": "string"
+              }
+            }
+          }
+        }
       },
-      "/Regex":{ 
-         "post":{ 
-            "tags":[ 
-               "Regex"
-            ],
-            "operationId":"Post",
-            "consumes":[ 
-               "application/json-patch+json",
-               "application/json",
-               "text/json",
-               "application/*+json"
-            ],
-            "produces":[ 
-               "text/plain",
-               "application/json",
-               "text/json"
-            ],
-            "parameters":[ 
-               { 
-                  "name":"data",
-                  "in":"body",
-                  "required":false,
-                  "schema":{ 
-                     "$ref":"#/definitions/RegexData"
-                  }
-               }
-            ],
-            "responses":{ 
-               "200":{ 
-                  "description":"Success",
-                  "schema":{ 
-                     "$ref":"#/definitions/RegexResult"
-                  }
-               }
+      "/Regex":{
+        "post": {
+          "tags": [
+            "Regex"
+          ],
+          "operationId": "Regex",
+          "consumes": [
+            "application/json-patch+json",
+            "application/json",
+            "text/json",
+            "application/*+json"
+          ],
+          "produces": [
+            "text/plain",
+            "application/json",
+            "text/json"
+          ],
+          "parameters": [
+            {
+              "name": "data",
+              "in": "body",
+              "required": false,
+              "schema": {
+                "$ref": "#/definitions/RegexData"
+              }
             }
-         }
+          ],
+          "responses": {
+            "200": {
+              "description": "Success",
+              "schema": {
+                "$ref": "#/definitions/RegexResult"
+              }
+            }
+          }
+        }
       }
    },
    "definitions":{ 
