@@ -14,6 +14,7 @@ using Swashbuckle.AspNetCore.Swagger;
 
 
 //adding swagger: https://www.talkingdotnet.com/add-swagger-to-asp-net-core-2-0-web-api/
+//swagger editor: http://editor.swagger.io/
 
 namespace ItAintBoring.SimpleWebApi
 {
