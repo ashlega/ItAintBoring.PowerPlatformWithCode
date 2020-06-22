@@ -32,12 +32,20 @@ namespace ItAintBoring.SimpleWebApi.Controllers
             MatchCollection foundMatches = Regex.Matches(data.value, data.pattern, RegexOptions.IgnoreCase);
             foreach (Match m in foundMatches)
             {
-                if (result.data != "") result.data += ";";
-                result.data += m.Value;
+                
+                if (result.data != "" && result.data != null) result.data += ";";
+                //result.data += m.Value;
+                result.data += m.Groups[1].Value.Trim();
             }
             return result;
         }
 
-        
+        [HttpGet]
+        public string Test()
+        {
+            return "ok";
+        }
+
+
     }
 }
