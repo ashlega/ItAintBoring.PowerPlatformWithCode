@@ -24,10 +24,10 @@
   ],
    "paths":{ 
       
-      "/Regex":{ 
+      "/regex_find_first_group":{ 
          "post":{ 
             "tags":[ 
-               "Regex"
+               "Regex Find First Group"
             ],
             "operationId":"Post",
             "consumes":[ 
